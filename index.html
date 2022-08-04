@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sidebar</title>
+</head>
+   <meta charset="UTF-8">
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<meta name="theme-color" content="red">
+
+
+
+
+<body>
+
+<div class="side"  id="sidebar">
+ <span  class="imga"  ><img src="moon.png"  id="icon"width="35px" > </span>
+  
+	<button  onclick="w3_close()" class="clo">&times;</button>
+	
+	 <br><br>
+	<a href="#">about me</a>
+	<a href="#">contact me</a>
+	<a href="#">address me</a>
+</div>
+
+
+
+
+<div  class="OPEN">
+    
+    
+   <span  class="imga2"><img width="35px" src="moon.png" id="icon2" alt=""></img></span>
+
+    
+    
+<button  onclick="w3_open()" style="font-size:30px;cursor:pointer" >&#9776;</button>
+        
+</div>
+    
+
+
+<br><br>
+
+<!-- ✔️✔️✔️ -->
+
+<div class="F"><span class="tartib"></span>
+<h3> روژا ژ دایکبوونا خوو پڕبکە . روژ و هەیڤ و سال</h3>
+
+<input minlength="1" maxlength="2" placeholder="روژ" type="number"  id="day"> 
+
+
+<input maxlength="2" placeholder="هەیڤ" type="number" name=""  id="month">
+
+<input  maxlength="4" placeholder="ساڵ" type="number"  name="" id="year"><br>
+
+     <button onclick="age()" class="age">کلیک کرن</button> 
+
+<div id="res"></div>
+
+
+</div >
+
+</body>
+<script>
+function w3_open()
+{
+document.getElementById("sidebar").style.width="170px";
+
+
+document.getElementById("sidebar").style.height="700px";
+}
+function w3_close()
+{
+document.getElementById("sidebar").style.width="0px";
+}
+
+
+
+
+
+
+
+<!-- imga  -->
+
+var icon =document.getElementById('icon');
+    
+    icon.onclick=function (){
+        
+       document.body.classList.toggle("dark-theme");
+        
+       if(document.body.classList.contains("dark-theme"))
+      {
+      
+      icon.src="sun.png";
+      icon2.src="sun.png";
+      }
+      else
+{
+icon.src="moon.png";
+<!--  -->
+icon2.src="moon.png";
+}
+        
+    }
+
+
+<!-- imga2 -->
+
+var icon2 =document.getElementById('icon2');
+    
+    icon2.onclick=function (){
+        
+       document.body.classList.toggle("dark-theme");
+        
+        
+        
+        if(document.body.classList.contains("dark-theme"))
+      {
+      
+      icon.src="sun.png";
+      icon2.src="sun.png";
+      }
+      else
+{
+icon.src="moon.png";
+<!--  -->
+icon2.src="moon.png";
+
+}
+        
+        
+       }                                  
+
+<!-- ok -->
+
+<!-- ✔️✔️✔️✔️✔️✔️ -->
+
+function age(){
+var date=new Date();
+var roj=date.getDay();
+var hayv=1+date.getMonth();
+var sal=date.getFullYear();
+<!--  --
+var d=day.value;
+
+var m=month.value;
+
+var y=year.value;
+-->
+var d=document.getElementById('day').value;
+var m=document.getElementById('month').value;
+var y=document.getElementById('year').value;
+var M=[31,28,31,30,31,30,31,31,30,31,30,31];
+if(d>roj)
+{
+roj=roj+M[hayv-1];
+hayv=hayv-1;
+
+}
+if(m>hayv)
+{
+hayv=hayv+12;
+sal=sal-1;
+
+}
+
+var dod =roj-d;
+var mo =hayv-m;
+var so =sal-y;
+var z=M[2]-dod;
+var zz=12-mo;
+
+document.getElementById('res').innerHTML
+="ژیێ تە "+so+" سالن"+" ، وتوو "+mo+" هەیڤی و "+dod+" روژی";
+}
+
+</script>
+
+
+
+</html>
+
+
+
+
+
+ 
+ 
+
+ 
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+

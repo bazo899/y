@@ -1,0 +1,173 @@
+body{
+     
+     transition: background-color 1.5s;   
+     }
+#icon{
+    
+width:30px;    
+    
+}
+     
+.dark-theme
+{
+    
+background-color: #333333;
+color:white;
+
+ transition: background-color 1.5s; 
+ 
+ 
+ 
+}
+ 
+    
+ 
+.side
+{
+   width:0px;
+  height:1000px;
+  position: absolute;
+  background-color: silver;
+  overflow: hidden;  
+  transition: 0.5s;
+  padding-top: 0px;
+  margin-top: 10;
+  top: 0px;
+  
+  
+}
+.side a {
+  padding: 0px 10px 10px 20px;
+  text-decoration: none;
+   font-size: 25px;
+  color: yellow;
+    transition: 0.1s;
+	 display: block;
+}
+.side a:hover
+{
+  color: #f1f1f1;
+  background-color:green;
+}
+.clo
+{
+position:absolute;
+right: 10px;
+top: 4px;
+font-size: 25px;
+  margin-left: 30px;
+}
+
+@media screen and (max-height: 450px) {
+  .side {padding-top: 15px;}
+  .side a {font-size: 18px;}
+}
+
+.imga{
+    
+ position:absolute;
+ left: 4px;
+ top: 2px;  
+    
+    
+}
+
+
+.OPEN{
+    
+  background-color:black;  
+    
+    
+}
+
+
+input {
+    
+ width: 75px;  
+  height: 20px;
+    
+    
+}
+
+
+
+div  input::placeholder {
+    
+    text-align: center;
+    color: red;
+}
+
+.F{
+    max-width: 350px;
+    height: 300px;
+border: bisque 5px solid;
+
+
+    
+}
+
+
+div input {
+    
+    margin-left: 23px;
+    margin-top: 10px;
+    border-radius: 15px;
+  box-shadow: 0 blue;  
+  text-align: center;
+}
+
+input:focus{
+    
+    box-shadow: 0 0 20px 0 aqua;
+ transition:.5s;
+ color: #098a00;
+}
+
+
+
+ .age{
+     
+   margin-top: 20px;
+   width: 100%;  
+     /* vere peva drawa ok pash zheba */
+ 
+
+ } 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ .imga2{
+     
+   position: absolute;  
+   right: 14px;
+   top: 13px;
+     
+ }
+ 
+ 
+ 
+ 
+ #res {
+ 
+     
+   font-family: arial;
+   
+   text-align: right;
+   
+   margin-top: 25px;
+   margin-right: 5px;
+   
+ }
+h3{
+
+ 
+color:lightsalmon;
+ 
+ 
+
+ 
+}
